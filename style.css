@@ -38,6 +38,17 @@ body{
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* HERO */
+
+.hero-petshop{
+
+  /* espaço interno */
+  padding: 80px 0;
+
+  /* evita quebra estranha */
+  overflow: hidden;
+}
+
 /* LOGO */
 
 .logo-petshop{
@@ -446,19 +457,25 @@ body{
 
 /* IMAGEM */
 
-.carousel-item img{
+/* IMAGEM DO CARROSSEL */
 
-  /* ocupa tela inteira */
-  width: 100%;
+.imagem-carrossel{
 
-  /* ocupa altura inteira */
-  height: 100%;
+  /* largura menor */
+  width: 80%;
 
-  /* centraliza corte */
-   object-fit: cover;
+  /* centraliza */
+  display: block;
+  margin: auto;
 
-  /* posição da imagem */
-  object-position: center;
+  /* altura */
+  height: 500px;
+
+  /* encaixa imagem */
+  object-fit: cover;
+
+  /* arredonda */
+  border-radius: 30px;
 }
 /* LEGENDA DO CARROSSEL */
 
@@ -474,7 +491,7 @@ body{
   border-radius: 25px;
 
   /* largura máxima */
-  max-width: 650px;
+  max-width: 550px;
 
   /* centraliza */
   margin: auto;
@@ -1093,3 +1110,4 @@ body{
   /* aumenta levemente */
   transform: scale(1.08);
 }
+
