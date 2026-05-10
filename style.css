@@ -1,0 +1,1095 @@
+/* RESET */
+
+/* RESET */
+
+/* remove margens e espaçamentos padrões do navegador */
+*{
+  margin: 0;
+
+  /* remove espaçamento interno padrão */
+  padding: 0;
+
+  /* faz largura e altura incluírem padding e borda */
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+
+  /* define a fonte principal do site */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* cor de fundo geral do site */
+  background-color: #f5fdfd;
+}
+
+/* HEADER */
+
+.header-petshop{
+
+  /* cria um degradê horizontal */
+  background: linear-gradient(90deg,#009CA6,#00c2cc);
+
+  /* espaço interno em cima e embaixo */
+  padding: 15px 0;
+
+  /* sombra suave abaixo do header */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+
+.logo-petshop{
+
+  /* deixa imagem e texto lado a lado */
+  display: flex;
+
+  /* centraliza verticalmente */
+  align-items: center;
+
+  /* espaço entre logo e texto */
+  gap: 12px;
+
+  /* remove sublinhado do link */
+  text-decoration: none;
+}
+
+/* IMAGEM DA LOGO */
+
+.logo-petshop img{
+
+  /* largura da imagem */
+  width: 50px;
+}
+
+/* TEXTO DA LOGO */
+
+.logo-petshop span{
+
+  /* cor branca */
+  color: white;
+
+  /* tamanho da fonte */
+  font-size: 1.5rem;
+
+  /* deixa o texto em negrito */
+  font-weight: bold;
+}
+
+/* LINKS */
+
+.nav-link{
+
+  /* cor dos links */
+  color: white;
+
+  /* espessura da fonte */
+  font-weight: 500;
+
+  /* espaço entre os links */
+  margin-left: 15px;
+
+  /* suaviza animações */
+  transition: 0.3s;
+}
+
+/* HOVER DOS LINKS */
+
+.nav-link:hover{
+
+  /* muda cor ao passar mouse */
+  color: #ffe082;
+
+  /* move o link levemente para cima */
+  transform: translateY(-2px);
+}
+
+/* BOTÃO */
+
+.btn-agendar{
+
+  /* fundo branco */
+  background-color: white;
+
+  /* cor do texto */
+  color: #009CA6;
+
+  /* remove borda */
+  border: none;
+
+  /* espaço interno */
+  padding: 10px 22px;
+
+  /* deixa arredondado */
+  border-radius: 30px;
+
+  /* deixa texto em negrito */
+  font-weight: bold;
+
+  /* suaviza animações */
+  transition: 0.3s;
+}
+
+/* HOVER DO BOTÃO */
+
+.btn-agendar:hover{
+
+  /* muda cor do fundo */
+  background-color: #ffe082;
+
+  /* aumenta levemente */
+  transform: scale(1.05);
+}
+
+/* MENU MOBILE */
+
+.navbar-toggler{
+
+  /* remove borda do botão hamburguer */
+  border: none;
+}
+
+/* QUANDO O BOTÃO É CLICADO */
+
+.navbar-toggler:focus{
+
+  /* remove brilho azul padrão */
+  box-shadow: none;
+}
+
+/* HERO SECTION */
+
+.hero-petshop{
+
+  /* espaço acima e abaixo da seção */
+  padding: 80px 0;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.hero-texto h1{
+
+  /* tamanho grande */
+  font-size: 3.2rem;
+
+  /* cor do texto */
+  color: #003b46;
+
+  /* deixa em negrito */
+  font-weight: bold;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* PARÁGRAFO HERO */
+
+.hero-texto p{
+
+  /* tamanho da fonte */
+  font-size: 1.1rem;
+
+  /* cor do texto */
+  color: #555;
+
+  /* espaço abaixo */
+  margin-bottom: 30px;
+
+  /* espaço entre linhas */
+  line-height: 1.8;
+}
+
+/* ÁREA DOS BOTÕES */
+
+.hero-botoes{
+
+  /* deixa botões lado a lado */
+  display: flex;
+
+  /* espaço entre eles */
+  gap: 15px;
+
+  /* quebra linha em telas pequenas */
+  flex-wrap: wrap;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.btn-hero{
+
+  /* cor de fundo */
+  background-color: #009CA6;
+
+  /* cor do texto */
+  color: white;
+
+  /* remove borda */
+  border: none;
+
+  /* espaço interno */
+  padding: 14px 28px;
+
+  /* arredonda */
+  border-radius: 30px;
+
+  /* deixa em negrito */
+  font-weight: bold;
+
+  /* suaviza animações */
+  transition: 0.3s;
+}
+
+/* HOVER BOTÃO PRINCIPAL */
+
+.btn-hero:hover{
+
+  /* muda cor */
+  background-color: #007d84;
+
+  /* move para cima */
+  transform: translateY(-3px);
+}
+
+/* BOTÃO SECUNDÁRIO */
+
+.btn-hero-outline{
+
+  /* fundo transparente */
+  background-color: transparent;
+
+  /* borda colorida */
+  border: 2px solid #009CA6;
+
+  /* cor do texto */
+  color: #009CA6;
+
+  /* espaço interno */
+  padding: 14px 28px;
+
+  /* arredonda */
+  border-radius: 30px;
+
+  /* negrito */
+  font-weight: bold;
+
+  /* suaviza animações */
+  transition: 0.3s;
+}
+
+/* HOVER BOTÃO SECUNDÁRIO */
+
+.btn-hero-outline:hover{
+
+  /* fundo colorido */
+  background-color: #009CA6;
+
+  /* texto branco */
+  color: white;
+}
+
+/* IMAGEM HERO */
+
+.hero-imagem img{
+
+  /* largura total */
+  width: 100%;
+
+  /* bordas arredondadas */
+  border-radius: 30px;
+
+  /* sombra suave */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* SERVIÇOS */
+
+.servicos{
+
+  /* espaço interno vertical */
+  padding: 90px 0;
+}
+
+/* TÍTULO DA SEÇÃO */
+
+.titulo-servicos{
+
+  /* centraliza texto */
+  text-align: center;
+
+  /* espaço abaixo */
+  margin-bottom: 60px;
+}
+
+/* TÍTULO */
+
+.titulo-servicos h2{
+
+  /* tamanho da fonte */
+  font-size: 2.5rem;
+
+  /* cor */
+  color: #003b46;
+
+  /* negrito */
+  font-weight: bold;
+
+  /* espaço abaixo */
+  margin-bottom: 15px;
+}
+
+/* TEXTO */
+
+.titulo-servicos p{
+
+  /* cor do texto */
+  color: #666;
+
+  /* tamanho da fonte */
+  font-size: 1.1rem;
+}
+
+/* CARD */
+
+.card-servico{
+
+  /* fundo branco */
+  background-color: white;
+
+  /* espaço interno */
+  padding: 40px 30px;
+
+  /* arredonda */
+  border-radius: 25px;
+
+  /* centraliza conteúdo */
+  text-align: center;
+
+  /* suaviza animações */
+  transition: 0.4s;
+
+  /* sombra */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  /* deixa todos os cards iguais */
+  height: 100%;
+}
+
+/* HOVER DO CARD */
+
+.card-servico:hover{
+
+  /* levanta card */
+  transform: translateY(-10px);
+}
+
+/* ÍCONE */
+
+.icone-servico{
+
+  /* aumenta tamanho do emoji */
+  font-size: 3rem;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* TÍTULO CARD */
+
+.card-servico h3{
+
+  /* cor */
+  color: #003b46;
+
+  /* espaço abaixo */
+  margin-bottom: 15px;
+
+  /* negrito */
+  font-weight: bold;
+}
+
+/* TEXTO CARD */
+
+.card-servico p{
+
+  /* cor do texto */
+  color: #666;
+
+  /* espaço entre linhas */
+  line-height: 1.7;
+}
+
+/* CARROSSEL */
+
+/* CARROSSEL */
+
+.carrossel-petshop{
+
+  /* espaço menor abaixo */
+  padding-bottom: 30px;
+}
+/* IMAGENS DO CARROSSEL */
+
+/* ÁREA TOTAL DO CARROSSEL */
+
+.carousel-item{
+
+  /* altura fixa do slide */
+  height: 600px;
+
+  /* esconde excessos */
+  overflow: hidden;
+
+  /* arredonda */
+  border-radius: 30px;
+}
+
+/* IMAGEM */
+
+.carousel-item img{
+
+  /* ocupa tela inteira */
+  width: 100%;
+
+  /* ocupa altura inteira */
+  height: 100%;
+
+  /* centraliza corte */
+   object-fit: cover;
+
+  /* posição da imagem */
+  object-position: center;
+}
+/* LEGENDA DO CARROSSEL */
+
+.carousel-caption{
+
+  /* fundo sólido */
+  background-color: rgba(255,255,255,0.95);
+
+  /* espaço interno */
+  padding: 30px;
+
+  /* bordas arredondadas */
+  border-radius: 25px;
+
+  /* largura máxima */
+  max-width: 650px;
+
+  /* centraliza */
+  margin: auto;
+
+  /* distância da parte inferior */
+  bottom: 50px;
+
+  /* sombra */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* TÍTULO */
+
+/* TÍTULO */
+
+.carousel-caption h2{
+
+  color: #003b46;
+
+  font-size: 2.3rem;
+
+  font-weight: bold;
+}
+
+/* TEXTO */
+
+.carousel-caption p{
+
+  color: #555;
+
+  font-size: 1.1rem;
+}
+/* TEXTO */
+
+.carousel-caption p{
+
+  color: #555;
+}
+
+/* TEXTO DO CARROSSEL */
+
+.carousel-caption p{
+
+  /* tamanho da fonte */
+  font-size: 1.1rem;
+}
+
+/* SETAS */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+
+  /* fundo escuro transparente */
+  background-color: rgba(0,0,0,0.5);
+
+  /* deixa circular */
+  border-radius: 50%;
+
+  /* aumenta tamanho */
+  padding: 20px;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+/* FOOTER */
+
+.footer-petshop{
+  margin: 0%;
+
+  /* cor de fundo escura */
+  background-color: #003b46;
+
+  /* espaço interno em cima/baixo e lados */
+  padding: 40px 20px;
+
+  /* centraliza todo conteúdo */
+  text-align: center;
+}
+
+/* TÍTULO */
+
+.footer-petshop h3{
+
+  /* cor branca */
+  color: white;
+
+  /* tamanho do texto */
+  font-size: 2rem;
+
+  /* espaço abaixo */
+  margin-bottom: 15px;
+}
+
+/* TEXTO */
+
+.footer-petshop p{
+
+  /* cor azul clara */
+  color: #d9f5f6;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+
+  /* tamanho da fonte */
+  font-size: 1rem;
+}
+
+/* ÁREA DE CONTATO */
+
+.footer-contato{
+
+  /* deixa os itens lado a lado */
+  display: flex;
+
+  /* centraliza horizontalmente */
+  justify-content: center;
+
+  /* espaço entre os itens */
+  gap: 25px;
+
+  /* quebra linha em telas pequenas */
+  flex-wrap: wrap;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+
+  /* cor branca */
+  color: white;
+}
+
+/* COPYRIGHT */
+
+.footer-petshop small{
+
+  /* cor mais suave */
+  color: #bfeaec;
+}
+
+/* MODAL */
+
+.modal-content{
+
+  /* arredonda */
+  border-radius: 25px;
+
+  /* remove borda */
+  border: none;
+
+  /* sombra */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* CABEÇALHO */
+
+.modal-header{
+
+  /* cor de fundo */
+  background-color: #009CA6;
+
+  /* texto branco */
+  color: white;
+
+  /* arredonda topo */
+  border-radius: 25px 25px 0 0;
+}
+
+/* TÍTULO */
+
+.modal-title{
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+}
+
+/* CORPO */
+
+.modal-body{
+
+  padding: 30px;
+}
+
+/* INPUTS */
+
+.form-control,
+.form-select{
+
+  padding: 12px;
+
+  border-radius: 12px;
+}
+
+/* FOOTER */
+
+.modal-footer{
+
+  border-top: none;
+
+  padding: 20px;
+}
+
+/* BOTÃO */
+
+.btn-modal{
+
+  background-color: #009CA6;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+
+.btn-modal:hover{
+
+  background-color: #007d84;
+}
+
+
+/*pagina de servicos */
+
+.banner-servicos{
+
+  /* degradê */
+  background: linear-gradient(90deg,#009CA6,#00c2cc);
+
+  /* espaço interno */
+  padding: 80px 20px;
+
+  /* centraliza */
+  text-align: center;
+
+  /* texto branco */
+  color: white;
+}
+
+/* TÍTULO */
+
+.banner-servicos h1{
+
+  /* tamanho */
+  font-size: 3rem;
+
+  /* negrito */
+  font-weight: bold;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+
+.banner-servicos p{
+
+  /* tamanho */
+  font-size: 1.1rem;
+}
+
+/* ÁREA SERVIÇOS */
+
+.pagina-servicos{
+
+  /* espaço vertical */
+  padding: 80px 0;
+}
+
+/* CARD */
+
+.card-pagina-servico{
+
+  /* fundo branco */
+  background-color: white;
+
+  /* espaço interno */
+  padding: 40px 30px;
+
+  /* arredonda */
+  border-radius: 25px;
+
+  /* centraliza */
+  text-align: center;
+
+  /* sombra */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  /* animação suave */
+  transition: 0.3s;
+
+  /* altura igual */
+  height: 100%;
+}
+
+/* HOVER */
+
+.card-pagina-servico:hover{
+
+  /* sobe levemente */
+  transform: translateY(-8px);
+}
+
+/* ÍCONE */
+
+.icone-pagina{
+
+  /* tamanho */
+  font-size: 3rem;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* TÍTULO */
+
+.card-pagina-servico h3{
+
+  /* cor */
+  color: #003b46;
+
+  /* espaço abaixo */
+  margin-bottom: 15px;
+
+  /* negrito */
+  font-weight: bold;
+}
+
+/* TEXTO */
+
+.card-pagina-servico p{
+
+  /* cor */
+  color: #666;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+
+  /* altura da linha */
+  line-height: 1.7;
+}
+
+/* PREÇO */
+
+.card-pagina-servico span{
+
+  /* fundo */
+  background-color: #009CA6;
+
+  /* texto branco */
+  color: white;
+
+  /* espaço interno */
+  padding: 10px 18px;
+
+  /* arredonda */
+  border-radius: 30px;
+
+  /* negrito */
+  font-weight: bold;
+
+  /* deixa inline-block */
+  display: inline-block;
+}
+
+
+
+
+/* pagina de produtos */
+
+
+
+
+/* BANNER PRODUTOS */
+
+.banner-produtos{
+
+  /* degradê */
+  background: linear-gradient(90deg,#009CA6,#00c2cc);
+
+  /* espaço interno */
+  padding: 80px 20px;
+
+  /* centraliza texto */
+  text-align: center;
+
+  /* texto branco */
+  color: white;
+}
+
+/* TÍTULO */
+
+.banner-produtos h1{
+
+  /* tamanho */
+  font-size: 3rem;
+
+  /* negrito */
+  font-weight: bold;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+
+.banner-produtos p{
+
+  /* tamanho */
+  font-size: 1.1rem;
+}
+
+
+
+
+
+
+/* ÁREA PRODUTOS */
+
+.pagina-produtos{
+
+  /* espaço vertical */
+  padding: 80px 0;
+}
+
+/* CARD */
+
+.card-produto{
+
+  /* fundo branco */
+  background-color: white;
+
+  /* arredonda */
+  border-radius: 25px;
+
+  /* espaço interno */
+  padding: 20px;
+
+  /* centraliza conteúdo */
+  text-align: center;
+
+  /* sombra */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  /* suaviza animações */
+  transition: 0.3s;
+
+  /* altura igual */
+  height: 100%;
+}
+
+/* HOVER */
+
+.card-produto:hover{
+
+  /* sobe levemente */
+  transform: translateY(-8px);
+}
+
+/* IMAGEM */
+
+.card-produto img{
+
+  /* largura total */
+  width: 100%;
+
+  /* altura fixa */
+  height: 220px;
+
+  /* encaixa imagem */
+  object-fit: cover;
+
+  /* arredonda */
+  border-radius: 20px;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* TÍTULO */
+
+.card-produto h3{
+
+  /* cor */
+  color: #003b46;
+
+  /* espaço abaixo */
+  margin-bottom: 10px;
+
+  /* negrito */
+  font-weight: bold;
+}
+
+/* TEXTO */
+
+.card-produto p{
+
+  /* cor */
+  color: #666;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* PREÇO */
+
+.card-produto span{
+
+  /* deixa bloco */
+  display: block;
+
+  /* tamanho */
+  font-size: 1.3rem;
+
+  /* negrito */
+  font-weight: bold;
+
+  /* cor */
+  color: #009CA6;
+
+  /* espaço abaixo */
+  margin-bottom: 20px;
+}
+
+/* BOTÃO */
+
+.btn-comprar{
+
+  /* fundo */
+  background-color: #009CA6;
+
+  /* texto branco */
+  color: white;
+
+  /* remove borda */
+  border: none;
+
+  /* espaço interno */
+  padding: 12px 25px;
+
+  /* arredonda */
+  border-radius: 30px;
+
+  /* negrito */
+  font-weight: bold;
+
+  /* animação */
+  transition: 0.3s;
+}
+
+/* HOVER BOTÃO */
+
+.btn-comprar:hover{
+
+  /* muda cor */
+  background-color: #007d84;
+}
+
+
+
+/* LOGO VOLTAR */
+
+.logo-voltar{
+
+  /* deixa fixada */
+  position: fixed;
+
+  /* distância do topo */
+  top: 20px;
+
+  /* distância da esquerda */
+  left: 20px;
+
+  /* fica acima de tudo */
+  z-index: 999;
+
+  /* animação suave */
+  transition: 0.3s;
+}
+
+/* IMAGEM */
+
+.logo-voltar img{
+
+  /* tamanho */
+  width: 70px;
+
+  /* deixa redonda */
+  border-radius: 50%;
+
+  /* fundo branco */
+  background-color: white;
+
+  /* espaço interno */
+  padding: 10px;
+
+  /* sombra */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* HOVER */
+
+.logo-voltar:hover{
+
+  /* aumenta levemente */
+  transform: scale(1.08);
+}
