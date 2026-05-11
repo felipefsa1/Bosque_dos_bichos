@@ -1,282 +1,166 @@
-/* RESET */
+/* ========================================= */
+/* RESET GERAL */
+/* ========================================= */
 
-/* RESET */
-
-/* remove margens e espaçamentos padrões do navegador */
+/* remove margens e espaçamentos padrões */
 *{
   margin: 0;
-
-  /* remove espaçamento interno padrão */
   padding: 0;
 
-  /* faz largura e altura incluírem padding e borda */
+  /* facilita controle de largura */
   box-sizing: border-box;
 }
 
+
+/* ========================================= */
 /* BODY */
+/* ========================================= */
 
 body{
 
-  /* define a fonte principal do site */
+  /* fonte principal */
   font-family: Arial, Helvetica, sans-serif;
 
-  /* cor de fundo geral do site */
-  background-color: #f5fdfd;
+  /* fundo geral do site */
+  background-color: #F5F1E8;
+
 }
 
+
+/* ========================================= */
+/* TEXTOS */
+/* ========================================= */
+
+p{
+
+  /* cor padrão dos textos */
+  color: #555555;
+
+  /* altura entre linhas */
+  line-height: 1.7;
+}
+
+
+/* ========================================= */
+/* TITULOS */
+/* ========================================= */
+
+h1, h2, h3{
+
+  /* verde principal */
+  color: #2F5D50;
+
+}
+
+
+/* ========================================= */
 /* HEADER */
+/* ========================================= */
 
 .header-petshop{
 
-  /* cria um degradê horizontal */
-  background: linear-gradient(90deg,#009CA6,#00c2cc);
-
-  /* espaço interno em cima e embaixo */
-  padding: 15px 0;
-
-  /* sombra suave abaixo do header */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* HERO */
-
-.hero-petshop{
+  /* fundo verde */
+  background-color: #2F5D50;
 
   /* espaço interno */
-  padding: 80px 0;
+  padding: 15px 0;
 
-  /* evita quebra estranha */
-  overflow: hidden;
+  /* sombra suave */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
 }
 
+
+/* ========================================= */
 /* LOGO */
+/* ========================================= */
 
 .logo-petshop{
 
-  /* deixa imagem e texto lado a lado */
+  /* imagem e texto lado a lado */
   display: flex;
 
   /* centraliza verticalmente */
   align-items: center;
 
-  /* espaço entre logo e texto */
+  /* espaço entre itens */
   gap: 12px;
 
-  /* remove sublinhado do link */
+  /* remove linha do link */
   text-decoration: none;
+
 }
 
-/* IMAGEM DA LOGO */
+
+/* IMAGEM LOGO */
 
 .logo-petshop img{
 
-  /* largura da imagem */
+  /* largura da logo */
   width: 50px;
+
 }
 
-/* TEXTO DA LOGO */
+
+/* TEXTO LOGO */
 
 .logo-petshop span{
 
-  /* cor branca */
   color: white;
 
-  /* tamanho da fonte */
   font-size: 1.5rem;
 
-  /* deixa o texto em negrito */
   font-weight: bold;
+
 }
 
-/* LINKS */
+
+/* ========================================= */
+/* LINKS MENU */
+/* ========================================= */
 
 .nav-link{
 
-  /* cor dos links */
   color: white;
 
-  /* espessura da fonte */
   font-weight: 500;
 
-  /* espaço entre os links */
   margin-left: 15px;
 
-  /* suaviza animações */
   transition: 0.3s;
+
 }
 
-/* HOVER DOS LINKS */
+
+/* HOVER LINKS */
 
 .nav-link:hover{
 
-  /* muda cor ao passar mouse */
-  color: #ffe082;
+  /* laranja claro */
+  color: #FF914D;
 
-  /* move o link levemente para cima */
   transform: translateY(-2px);
+
 }
 
-/* BOTÃO */
+
+/* ========================================= */
+/* BOTÃO AGENDAR */
+/* ========================================= */
 
 .btn-agendar{
 
-  /* fundo branco */
-  background-color: white;
+  /* fundo laranja */
+  background-color: #FF914D;
 
-  /* cor do texto */
-  color: #009CA6;
-
-  /* remove borda */
-  border: none;
-
-  /* espaço interno */
-  padding: 10px 22px;
-
-  /* deixa arredondado */
-  border-radius: 30px;
-
-  /* deixa texto em negrito */
-  font-weight: bold;
-
-  /* suaviza animações */
-  transition: 0.3s;
-}
-
-/* HOVER DO BOTÃO */
-
-.btn-agendar:hover{
-
-  /* muda cor do fundo */
-  background-color: #ffe082;
-
-  /* aumenta levemente */
-  transform: scale(1.05);
-}
-
-/* MENU MOBILE */
-
-.navbar-toggler{
-
-  /* remove borda do botão hamburguer */
-  border: none;
-}
-
-/* QUANDO O BOTÃO É CLICADO */
-
-.navbar-toggler:focus{
-
-  /* remove brilho azul padrão */
-  box-shadow: none;
-}
-
-/* HERO SECTION */
-
-.hero-petshop{
-
-  /* espaço acima e abaixo da seção */
-  padding: 80px 0;
-}
-
-/* TÍTULO PRINCIPAL */
-
-.hero-texto h1{
-
-  /* tamanho grande */
-  font-size: 3.2rem;
-
-  /* cor do texto */
-  color: #003b46;
-
-  /* deixa em negrito */
-  font-weight: bold;
-
-  /* espaço abaixo */
-  margin-bottom: 20px;
-}
-
-/* PARÁGRAFO HERO */
-
-.hero-texto p{
-
-  /* tamanho da fonte */
-  font-size: 1.1rem;
-
-  /* cor do texto */
-  color: #555;
-
-  /* espaço abaixo */
-  margin-bottom: 30px;
-
-  /* espaço entre linhas */
-  line-height: 1.8;
-}
-
-/* ÁREA DOS BOTÕES */
-
-.hero-botoes{
-
-  /* deixa botões lado a lado */
-  display: flex;
-
-  /* espaço entre eles */
-  gap: 15px;
-
-  /* quebra linha em telas pequenas */
-  flex-wrap: wrap;
-}
-
-/* BOTÃO PRINCIPAL */
-
-.btn-hero{
-
-  /* cor de fundo */
-  background-color: #009CA6;
-
-  /* cor do texto */
+  /* texto branco */
   color: white;
 
   /* remove borda */
   border: none;
 
-  /* espaço interno */
-  padding: 14px 28px;
-
-  /* arredonda */
-  border-radius: 30px;
-
-  /* deixa em negrito */
-  font-weight: bold;
-
-  /* suaviza animações */
-  transition: 0.3s;
-}
-
-/* HOVER BOTÃO PRINCIPAL */
-
-.btn-hero:hover{
-
-  /* muda cor */
-  background-color: #007d84;
-
-  /* move para cima */
-  transform: translateY(-3px);
-}
-
-/* BOTÃO SECUNDÁRIO */
-
-.btn-hero-outline{
-
-  /* fundo transparente */
-  background-color: transparent;
-
-  /* borda colorida */
-  border: 2px solid #009CA6;
-
-  /* cor do texto */
-  color: #009CA6;
-
-  /* espaço interno */
-  padding: 14px 28px;
+  /* espaçamento interno */
+  padding: 12px 25px;
 
   /* arredonda */
   border-radius: 30px;
@@ -284,400 +168,443 @@ body{
   /* negrito */
   font-weight: bold;
 
-  /* suaviza animações */
+  /* cursor mãozinha */
+  cursor: pointer;
+
+  /* animação suave */
   transition: 0.3s;
+
 }
 
-/* HOVER BOTÃO SECUNDÁRIO */
 
-.btn-hero-outline:hover{
+/* HOVER BOTÃO */
 
-  /* fundo colorido */
-  background-color: #009CA6;
+.btn-agendar:hover{
 
-  /* texto branco */
-  color: white;
+  /* laranja mais escuro */
+  background-color: #E67E3D;
+
+  /* aumenta levemente */
+  transform: scale(1.05);
+
 }
+
+
+/* ========================================= */
+/* HERO SECTION */
+/* ========================================= */
+
+.hero-petshop{
+
+  /* espaço vertical */
+  padding: 100px 0;
+
+  /* fundo bege */
+  background-color: #F5F1E8;
+
+}
+
+
+/* TITULO HERO */
+
+.hero-texto h1{
+
+  font-size: 3.2rem;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* TEXTO HERO */
+
+.hero-texto p{
+
+  font-size: 1.1rem;
+
+  margin-bottom: 30px;
+
+}
+
+
+/* BENEFÍCIOS */
+
+.hero-beneficios{
+
+  /* coloca lado a lado */
+  display: flex;
+
+  /* espaço */
+  gap: 15px;
+
+  /* quebra no celular */
+  flex-wrap: wrap;
+
+}
+
+
+/* CADA BENEFÍCIO */
+
+.hero-beneficios span{
+
+  /* fundo branco */
+  background-color: white;
+
+  /* espaço interno */
+  padding: 10px 18px;
+
+  /* arredonda */
+  border-radius: 30px;
+
+  /* sombra */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+}
+
 
 /* IMAGEM HERO */
 
 .hero-imagem img{
 
-  /* largura total */
   width: 100%;
 
   /* bordas arredondadas */
   border-radius: 30px;
 
-  /* sombra suave */
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  /* sombra */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
 }
 
+
+/* ========================================= */
 /* SERVIÇOS */
+/* ========================================= */
 
 .servicos{
 
-  /* espaço interno vertical */
-  padding: 90px 0;
-}
+  padding: 80px 10%;
 
-/* TÍTULO DA SEÇÃO */
-
-.titulo-servicos{
-
-  /* centraliza texto */
   text-align: center;
 
-  /* espaço abaixo */
-  margin-bottom: 60px;
 }
 
-/* TÍTULO */
 
-.titulo-servicos h2{
+/* TITULO */
 
-  /* tamanho da fonte */
+.servicos h2{
+
   font-size: 2.5rem;
 
-  /* cor */
-  color: #003b46;
+  margin-bottom: 50px;
 
-  /* negrito */
-  font-weight: bold;
-
-  /* espaço abaixo */
-  margin-bottom: 15px;
 }
 
-/* TEXTO */
 
-.titulo-servicos p{
+/* CONTAINER CARDS */
 
-  /* cor do texto */
-  color: #666;
+.cards-servicos{
 
-  /* tamanho da fonte */
-  font-size: 1.1rem;
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+
 }
+
 
 /* CARD */
 
 .card-servico{
 
-  /* fundo branco */
+  width: 320px;
+
   background-color: white;
 
-  /* espaço interno */
-  padding: 40px 30px;
-
-  /* arredonda */
   border-radius: 25px;
 
-  /* centraliza conteúdo */
-  text-align: center;
+  overflow: hidden;
 
-  /* suaviza animações */
-  transition: 0.4s;
-
-  /* sombra */
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 
-  /* deixa todos os cards iguais */
-  height: 100%;
+  transition: 0.3s;
+
 }
 
-/* HOVER DO CARD */
+
+/* HOVER CARD */
 
 .card-servico:hover{
 
-  /* levanta card */
   transform: translateY(-10px);
+
 }
 
-/* ÍCONE */
 
-.icone-servico{
+/* IMAGEM CARD */
 
-  /* aumenta tamanho do emoji */
-  font-size: 3rem;
+.card-servico img{
 
-  /* espaço abaixo */
-  margin-bottom: 20px;
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
 }
 
-/* TÍTULO CARD */
+
+/* TITULO CARD */
 
 .card-servico h3{
 
-  /* cor */
-  color: #003b46;
+  margin-top: 20px;
 
-  /* espaço abaixo */
-  margin-bottom: 15px;
+  font-size: 1.8rem;
 
-  /* negrito */
-  font-weight: bold;
 }
+
 
 /* TEXTO CARD */
 
 .card-servico p{
 
-  /* cor do texto */
-  color: #666;
+  padding: 15px;
 
-  /* espaço entre linhas */
-  line-height: 1.7;
 }
 
-/* CARROSSEL */
 
+/* BOTÃO CARD */
+
+.card-servico button{
+
+  background-color: #FF914D;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 12px;
+
+  margin-bottom: 25px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+
+/* HOVER BOTÃO CARD */
+
+.card-servico button:hover{
+
+  background-color: #E67E3D;
+
+  transform: scale(1.05);
+
+}
+
+
+/* ========================================= */
 /* CARROSSEL */
+/* ========================================= */
 
 .carrossel-petshop{
 
-  /* espaço menor abaixo */
-  padding-bottom: 30px;
-}
-/* IMAGENS DO CARROSSEL */
+  padding-bottom: 50px;
 
-/* ÁREA TOTAL DO CARROSSEL */
+}
+
+
+/* ITEM */
 
 .carousel-item{
 
-  /* altura fixa do slide */
   height: 600px;
 
-  /* esconde excessos */
   overflow: hidden;
 
-  /* arredonda */
   border-radius: 30px;
+
 }
+
 
 /* IMAGEM */
 
-/* IMAGEM DO CARROSSEL */
-
 .imagem-carrossel{
 
-  /* largura menor */
   width: 80%;
 
-  /* centraliza */
-  display: block;
-  margin: auto;
-
-  /* altura */
   height: 500px;
 
-  /* encaixa imagem */
   object-fit: cover;
 
-  /* arredonda */
+  display: block;
+
+  margin: auto;
+
   border-radius: 30px;
+
 }
-/* LEGENDA DO CARROSSEL */
+
+
+/* LEGENDA */
 
 .carousel-caption{
 
-  /* fundo sólido */
   background-color: rgba(255,255,255,0.95);
 
-  /* espaço interno */
   padding: 30px;
 
-  /* bordas arredondadas */
   border-radius: 25px;
 
-  /* largura máxima */
   max-width: 550px;
 
-  /* centraliza */
   margin: auto;
 
-  /* distância da parte inferior */
   bottom: 50px;
 
-  /* sombra */
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-/* TÍTULO */
 
-/* TÍTULO */
+}
+
+
+/* TEXOS */
 
 .carousel-caption h2{
 
-  color: #003b46;
+  font-size: 2rem;
 
-  font-size: 2.3rem;
-
-  font-weight: bold;
 }
-
-/* TEXTO */
 
 .carousel-caption p{
 
-  color: #555;
+  font-size: 1rem;
 
-  font-size: 1.1rem;
-}
-/* TEXTO */
-
-.carousel-caption p{
-
-  color: #555;
 }
 
-/* TEXTO DO CARROSSEL */
-
-.carousel-caption p{
-
-  /* tamanho da fonte */
-  font-size: 1.1rem;
-}
 
 /* SETAS */
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
 
-  /* fundo escuro transparente */
   background-color: rgba(0,0,0,0.5);
 
-  /* deixa circular */
   border-radius: 50%;
 
-  /* aumenta tamanho */
   padding: 20px;
+
 }
 
 
-
-
-
-
-
+/* ========================================= */
 /* FOOTER */
-
-/* FOOTER */
+/* ========================================= */
 
 .footer-petshop{
-  margin: 0%;
 
-  /* cor de fundo escura */
-  background-color: #003b46;
+  background-color: #2F5D50;
 
-  /* espaço interno em cima/baixo e lados */
   padding: 40px 20px;
 
-  /* centraliza todo conteúdo */
   text-align: center;
+
 }
 
-/* TÍTULO */
+
+/* TITULO FOOTER */
 
 .footer-petshop h3{
 
-  /* cor branca */
   color: white;
 
-  /* tamanho do texto */
   font-size: 2rem;
 
-  /* espaço abaixo */
   margin-bottom: 15px;
+
 }
 
-/* TEXTO */
+
+/* TEXTO FOOTER */
 
 .footer-petshop p{
 
-  /* cor azul clara */
   color: #d9f5f6;
 
-  /* espaço abaixo */
   margin-bottom: 20px;
 
-  /* tamanho da fonte */
-  font-size: 1rem;
 }
 
-/* ÁREA DE CONTATO */
+
+/* CONTATO */
 
 .footer-contato{
 
-  /* deixa os itens lado a lado */
   display: flex;
 
-  /* centraliza horizontalmente */
   justify-content: center;
 
-  /* espaço entre os itens */
   gap: 25px;
 
-  /* quebra linha em telas pequenas */
   flex-wrap: wrap;
 
-  /* espaço abaixo */
   margin-bottom: 20px;
 
-  /* cor branca */
   color: white;
+
 }
+
 
 /* COPYRIGHT */
 
 .footer-petshop small{
 
-  /* cor mais suave */
-  color: #bfeaec;
+  color: #d9f5f6;
+
 }
 
+
+/* ========================================= */
 /* MODAL */
+/* ========================================= */
 
 .modal-content{
 
-  /* arredonda */
   border-radius: 25px;
 
-  /* remove borda */
   border: none;
 
-  /* sombra */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-/* CABEÇALHO */
+
+/* HEADER MODAL */
 
 .modal-header{
 
-  /* cor de fundo */
-  background-color: #009CA6;
+  background-color: #2F5D50;
 
-  /* texto branco */
   color: white;
 
-  /* arredonda topo */
-  border-radius: 25px 25px 0 0;
 }
 
-/* TÍTULO */
 
-.modal-title{
-
-  font-size: 1.5rem;
-
-  font-weight: bold;
-}
-
-/* CORPO */
+/* BODY MODAL */
 
 .modal-body{
 
   padding: 30px;
+
 }
+
 
 /* INPUTS */
 
@@ -687,22 +614,24 @@ body{
   padding: 12px;
 
   border-radius: 12px;
+
 }
 
-/* FOOTER */
+
+/* FOOTER MODAL */
 
 .modal-footer{
 
   border-top: none;
 
-  padding: 20px;
 }
 
-/* BOTÃO */
+
+/* BOTÃO MODAL */
 
 .btn-modal{
 
-  background-color: #009CA6;
+  background-color: #FF914D;
 
   color: white;
 
@@ -715,173 +644,32 @@ body{
   font-weight: bold;
 
   transition: 0.3s;
+
 }
 
-/* HOVER */
+
+/* HOVER BOTÃO */
 
 .btn-modal:hover{
 
-  background-color: #007d84;
+  background-color: #E67E3D;
+
 }
 
 
-/*pagina de servicos */
+
+
+
+/* ========================================= */
+/* PAGINA SERVIÇOS */
+/* ========================================= */
+
+/* BANNER */
 
 .banner-servicos{
 
-  /* degradê */
-  background: linear-gradient(90deg,#009CA6,#00c2cc);
-
-  /* espaço interno */
-  padding: 80px 20px;
-
-  /* centraliza */
-  text-align: center;
-
-  /* texto branco */
-  color: white;
-}
-
-/* TÍTULO */
-
-.banner-servicos h1{
-
-  /* tamanho */
-  font-size: 3rem;
-
-  /* negrito */
-  font-weight: bold;
-
-  /* espaço abaixo */
-  margin-bottom: 20px;
-}
-
-/* TEXTO */
-
-.banner-servicos p{
-
-  /* tamanho */
-  font-size: 1.1rem;
-}
-
-/* ÁREA SERVIÇOS */
-
-.pagina-servicos{
-
-  /* espaço vertical */
-  padding: 80px 0;
-}
-
-/* CARD */
-
-.card-pagina-servico{
-
-  /* fundo branco */
-  background-color: white;
-
-  /* espaço interno */
-  padding: 40px 30px;
-
-  /* arredonda */
-  border-radius: 25px;
-
-  /* centraliza */
-  text-align: center;
-
-  /* sombra */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-
-  /* animação suave */
-  transition: 0.3s;
-
-  /* altura igual */
-  height: 100%;
-}
-
-/* HOVER */
-
-.card-pagina-servico:hover{
-
-  /* sobe levemente */
-  transform: translateY(-8px);
-}
-
-/* ÍCONE */
-
-.icone-pagina{
-
-  /* tamanho */
-  font-size: 3rem;
-
-  /* espaço abaixo */
-  margin-bottom: 20px;
-}
-
-/* TÍTULO */
-
-.card-pagina-servico h3{
-
-  /* cor */
-  color: #003b46;
-
-  /* espaço abaixo */
-  margin-bottom: 15px;
-
-  /* negrito */
-  font-weight: bold;
-}
-
-/* TEXTO */
-
-.card-pagina-servico p{
-
-  /* cor */
-  color: #666;
-
-  /* espaço abaixo */
-  margin-bottom: 20px;
-
-  /* altura da linha */
-  line-height: 1.7;
-}
-
-/* PREÇO */
-
-.card-pagina-servico span{
-
-  /* fundo */
-  background-color: #009CA6;
-
-  /* texto branco */
-  color: white;
-
-  /* espaço interno */
-  padding: 10px 18px;
-
-  /* arredonda */
-  border-radius: 30px;
-
-  /* negrito */
-  font-weight: bold;
-
-  /* deixa inline-block */
-  display: inline-block;
-}
-
-
-
-
-/* pagina de produtos */
-
-
-
-
-/* BANNER PRODUTOS */
-
-.banner-produtos{
-
-  /* degradê */
-  background: linear-gradient(90deg,#009CA6,#00c2cc);
+  /* fundo degradê */
+  background: linear-gradient(90deg, #2F5D50, #4E7C6F);
 
   /* espaço interno */
   padding: 80px 20px;
@@ -891,248 +679,319 @@ body{
 
   /* texto branco */
   color: white;
+
 }
 
-/* TÍTULO */
+
+/* TITULO */
+
+.banner-servicos h1{
+
+  font-size: 3rem;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+  color: white;
+
+}
+
+
+/* TEXTO */
+
+.banner-servicos p{
+
+  font-size: 1.1rem;
+
+  color: #F5F1E8;
+
+}
+
+
+/* AREA SERVIÇOS */
+
+.pagina-servicos{
+
+  padding: 80px 0;
+
+}
+
+
+/* CARD */
+
+.card-pagina-servico{
+
+  background-color: white;
+
+  padding: 40px 30px;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+
+  height: 100%;
+
+}
+
+
+/* HOVER */
+
+.card-pagina-servico:hover{
+
+  transform: translateY(-8px);
+
+}
+
+
+/* ÍCONE */
+
+.icone-pagina{
+
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* TITULO */
+
+.card-pagina-servico h3{
+
+  color: #2F5D50;
+
+  margin-bottom: 15px;
+
+  font-weight: bold;
+
+}
+
+
+/* TEXTO */
+
+.card-pagina-servico p{
+
+  color: #666;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* PREÇO */
+
+.card-pagina-servico span{
+
+  background-color: #FF914D;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  display: inline-block;
+
+}
+
+
+/* ========================================= */
+/* PAGINA PRODUTOS */
+/* ========================================= */
+
+/* BANNER */
+
+.banner-produtos{
+
+  background: linear-gradient(90deg, #2F5D50, #4E7C6F);
+
+  padding: 80px 20px;
+
+  text-align: center;
+
+  color: white;
+
+}
+
+
+/* TITULO */
 
 .banner-produtos h1{
 
-  /* tamanho */
   font-size: 3rem;
 
-  /* negrito */
   font-weight: bold;
 
-  /* espaço abaixo */
   margin-bottom: 20px;
+
+  color: white;
+
 }
+
 
 /* TEXTO */
 
 .banner-produtos p{
 
-  /* tamanho */
   font-size: 1.1rem;
+
+  color: #F5F1E8;
+
 }
 
 
-
-
-
-
-/* ÁREA PRODUTOS */
+/* AREA PRODUTOS */
 
 .pagina-produtos{
 
-  /* espaço vertical */
   padding: 80px 0;
+
 }
+
 
 /* CARD */
 
 .card-produto{
 
-  /* fundo branco */
   background-color: white;
 
-  /* arredonda */
   border-radius: 25px;
 
-  /* espaço interno */
   padding: 20px;
 
-  /* centraliza conteúdo */
   text-align: center;
 
-  /* sombra */
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 
-  /* suaviza animações */
   transition: 0.3s;
 
-  /* altura igual */
   height: 100%;
+
 }
+
 
 /* HOVER */
 
 .card-produto:hover{
 
-  /* sobe levemente */
   transform: translateY(-8px);
+
 }
+
 
 /* IMAGEM */
 
 .card-produto img{
 
-  /* largura total */
   width: 100%;
 
-  /* altura fixa */
   height: 220px;
 
-  /* encaixa imagem */
   object-fit: cover;
 
-  /* arredonda */
   border-radius: 20px;
 
-  /* espaço abaixo */
   margin-bottom: 20px;
+
 }
 
-/* TÍTULO */
+
+/* TITULO */
 
 .card-produto h3{
 
-  /* cor */
-  color: #003b46;
+  color: #2F5D50;
 
-  /* espaço abaixo */
   margin-bottom: 10px;
 
-  /* negrito */
   font-weight: bold;
+
 }
+
 
 /* TEXTO */
 
 .card-produto p{
 
-  /* cor */
   color: #666;
 
-  /* espaço abaixo */
   margin-bottom: 20px;
+
 }
+
 
 /* PREÇO */
 
 .card-produto span{
 
-  /* deixa bloco */
   display: block;
 
-  /* tamanho */
   font-size: 1.3rem;
 
-  /* negrito */
   font-weight: bold;
 
-  /* cor */
-  color: #009CA6;
+  color: #FF914D;
 
-  /* espaço abaixo */
   margin-bottom: 20px;
+
 }
+
 
 /* BOTÃO */
 
 .btn-comprar{
 
-  /* fundo */
-  background-color: #009CA6;
+  background-color: #FF914D;
 
-  /* texto branco */
   color: white;
 
-  /* remove borda */
   border: none;
 
-  /* espaço interno */
   padding: 12px 25px;
 
-  /* arredonda */
   border-radius: 30px;
 
-  /* negrito */
   font-weight: bold;
 
-  /* animação */
   transition: 0.3s;
+
 }
 
-/* HOVER BOTÃO */
-
-.btn-comprar:hover{
-
-  /* muda cor */
-  background-color: #007d84;
-}
-
-
-
-/* LOGO VOLTAR */
-
-.logo-voltar{
-
-  /* deixa fixada */
-  position: fixed;
-
-  /* distância do topo */
-  top: 20px;
-
-  /* distância da esquerda */
-  left: 20px;
-
-  /* fica acima de tudo */
-  z-index: 999;
-
-  /* animação suave */
-  transition: 0.3s;
-}
-
-/* IMAGEM */
-
-.logo-voltar img{
-
-  /* tamanho */
-  width: 70px;
-
-  /* deixa redonda */
-  border-radius: 50%;
-
-  /* fundo branco */
-  background-color: white;
-
-  /* espaço interno */
-  padding: 10px;
-
-  /* sombra */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
 
 /* HOVER */
 
-.logo-voltar:hover{
+.btn-comprar:hover{
 
-  /* aumenta levemente */
-  transform: scale(1.08);
+  background-color: #E67E3D;
+
 }
 
 
-
-
-
+/* ========================================= */
 /* PAGINA PETS */
+/* ========================================= */
 
 /* BANNER */
 
 .banner-pets{
 
-  /* degradê */
-  background: linear-gradient(90deg,#009CA6,#00c2cc);
+  background: linear-gradient(90deg, #2F5D50, #4E7C6F);
 
-  /* espaço interno */
   padding: 80px 20px;
 
-  /* centraliza */
   text-align: center;
 
-  /* texto branco */
   color: white;
+
 }
+
 
 /* TITULO */
 
@@ -1143,21 +1002,31 @@ body{
   font-weight: bold;
 
   margin-bottom: 20px;
+
+  color: white;
+
 }
+
 
 /* TEXTO */
 
 .banner-pets p{
 
   font-size: 1.1rem;
+
+  color: #F5F1E8;
+
 }
+
 
 /* AREA PETS */
 
 .pagina-pets{
 
   padding: 80px 0;
+
 }
+
 
 /* CARD */
 
@@ -1176,14 +1045,18 @@ body{
   transition: 0.3s;
 
   height: 100%;
+
 }
+
 
 /* HOVER */
 
 .card-pet:hover{
 
   transform: translateY(-8px);
+
 }
+
 
 /* IMAGEM */
 
@@ -1198,18 +1071,22 @@ body{
   border-radius: 20px;
 
   margin-bottom: 20px;
+
 }
+
 
 /* TITULO */
 
 .card-pet h3{
 
-  color: #003b46;
+  color: #2F5D50;
 
   margin-bottom: 10px;
 
   font-weight: bold;
+
 }
+
 
 /* TEXTO */
 
@@ -1218,13 +1095,15 @@ body{
   color: #666;
 
   margin-bottom: 20px;
+
 }
+
 
 /* TAG */
 
 .card-pet span{
 
-  background-color: #009CA6;
+  background-color: #FF914D;
 
   color: white;
 
@@ -1235,4 +1114,133 @@ body{
   font-weight: bold;
 
   display: inline-block;
+
+}
+
+
+/* botão whatsapp */
+
+.whatsapp-float{
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  width: 65px;
+
+  height: 65px;
+
+  background-color: #25D366;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 2rem;
+
+  text-decoration: none;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+  z-index: 999;
+
+  transition: 0.3s;
+
+}
+
+/* hover */
+
+.whatsapp-float:hover{
+
+  transform: scale(1.1);
+
+}
+
+
+
+
+/* ========================================= */
+/* RESPONSIVIDADE */
+/* ========================================= */
+
+@media (max-width: 768px){
+
+  /* HERO */
+
+  .hero-petshop{
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+  }
+
+  /* TITULO */
+
+  .hero-texto h1{
+
+    font-size: 2.3rem;
+
+  }
+
+  /* BENEFICIOS */
+
+  .hero-beneficios{
+
+    justify-content: center;
+
+  }
+
+  /* IMAGEM */
+
+  .hero-imagem{
+
+    margin-top: 40px;
+
+  }
+
+  /* CARDS */
+
+  .cards-servicos{
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+  /* CARROSSEL */
+
+  .carousel-item{
+
+    height: auto;
+
+  }
+
+  .imagem-carrossel{
+
+    width: 100%;
+
+    height: 300px;
+
+  }
+
+  /* LEGENDA */
+
+  .carousel-caption{
+
+    position: static;
+
+    margin-top: 20px;
+
+  }
+
 }
