@@ -1,116 +1,131 @@
-<!doctype html> <!-- informa ao navegador que estamos usando HTML5 -->
-
-<html lang="pt-br"> <!-- define o idioma do site como português -->
+<!doctype html>
+<html lang="pt-br">
 
 <head>
-  <!-- windows + . = emoji -->
 
-  <meta charset="utf-8"> <!-- permite usar acentos e caracteres especiais -->
+  <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- deixa o site responsivo em celulares -->
 
   <!-- BOOTSTRAP -->
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- importa o CSS do Bootstrap -->
 
-  <!-- CSS -->
-
-  <link rel="stylesheet" href="style.css">
-  <!-- conecta seu arquivo CSS personalizado -->
-
-  <title>Bosque dos Bichos</title> <!-- nome da aba do navegador -->
-
-
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>
+    Bosque dos Bichos
+  </title>
 
 </head>
 
-<a href="https://wa.me/5512999999999" class="whatsapp-float">
-
-  💬
-
-</a>
-
 <body>
+
+  <!-- BOTÃO WHATSAPP -->
+
+  <a href="https://wa.me/5512999999999" class="whatsapp-float">
+
+    💬
+
+  </a>
 
   <!-- HEADER -->
 
   <header class="header-petshop">
-    <!-- cabeçalho principal do site -->
 
     <nav class="navbar navbar-expand-lg">
-      <!-- navbar do Bootstrap -->
-      <!-- navbar-expand-lg = expande o menu em telas grandes -->
 
       <div class="container">
-        <!-- centraliza e limita o conteúdo -->
 
         <!-- LOGO -->
 
         <a class="logo-petshop" href="index.html">
-          <!-- link da logo para voltar ao início -->
 
-          <img src="img/corte-de-cabelo.png" alt="Logo Petshop">
-          <!-- imagem da logo -->
+          <img src="./img/loja-de-animais.png" alt="Logo">
 
-          <span>Bosque dos Bichos</span>
-          <!-- nome do petshop -->
+          <span>
+            Bosque dos Bichos
+          </span>
 
         </a>
 
         <!-- BOTÃO MOBILE -->
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPetshop">
-          <!-- botão hamburguer para celular -->
+        <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPetshop">
 
           <span class="navbar-toggler-icon"></span>
-          <!-- ícone do menu mobile -->
 
         </button>
 
         <!-- MENU -->
 
-        <div class="collapse navbar-collapse justify-content-end" id="menuPetshop">
-          <!-- collapse = menu recolhível -->
-          <!-- justify-content-end = joga o menu para direita -->
+        <div class="collapse navbar-collapse justify-content-end"
+          id="menuPetshop">
 
           <ul class="navbar-nav align-items-center">
-            <!-- lista dos links -->
-
-
-
 
             <li class="nav-item">
-              <a class="nav-link" href="pets.html">
+
+              <a class="nav-link"
+                href="index.html">
+
+                Início
+
+              </a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link"
+                href="pets.html">
+
                 Pets
+
               </a>
+
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="produtos.html">
+
+              <a class="nav-link"
+                href="produtos.html">
+
                 Produtos
+
               </a>
+
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="servicos.html">
+
+              <a class="nav-link"
+                href="servicos.html">
+
                 Serviços
+
               </a>
+
             </li>
 
             <!-- BOTÃO -->
 
             <li class="nav-item ms-3">
-              <!-- ms-3 = margem esquerda -->
 
-              <button class="btn-agendar" data-bs-toggle="modal" data-bs-target="#modalPet">
-                <!-- botão que abre o modal -->
+              <button class="btn-agendar"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPet">
 
                 Agendar Banho 🐶
 
@@ -128,7 +143,7 @@
 
   </header>
 
-
+  <!-- HERO -->
 
   <section class="hero-petshop">
 
@@ -141,12 +156,16 @@
         <div class="col-lg-6 hero-texto">
 
           <h1>
+
             O melhor cuidado para seu melhor amigo 🐾
+
           </h1>
 
           <p>
-            Banho, tosa, produtos premium e muito carinho
-            para deixar seu pet feliz todos os dias.
+
+            Banho, tosa, consultas veterinárias e produtos premium para deixar
+            seu pet feliz todos os dias.
+
           </p>
 
           <!-- BENEFÍCIOS -->
@@ -185,107 +204,93 @@
 
   <!-- SERVIÇOS -->
 
-  <!-- SEÇÃO DE SERVIÇOS -->
   <section class="servicos">
 
-    <!-- TITULO -->
-    <h2>Nossos Serviços</h2>
+    <h2>
+      Nossos Serviços
+    </h2>
 
-    <!-- CONTAINER DOS CARDS -->
     <div class="cards-servicos">
 
       <!-- CARD 1 -->
+
       <div class="card-servico">
 
-        <!-- IMAGEM -->
         <img src="img/banho.jpg" alt="Banho">
 
-        <!-- TITULO -->
-        <h3>Banho</h3>
+        <h3>
+          Banho Premium
+        </h3>
 
-        <!-- TEXTO -->
         <p>
-          Banho completo com produtos especiais para seu pet.
+
+          Banho completo com hidratação, perfume suave e produtos especiais.
+
         </p>
 
-        <!-- BOTÃO -->
-        <button>Saiba Mais</button>
+        <button>
+          Saiba Mais
+        </button>
 
       </div>
-
 
       <!-- CARD 2 -->
+
       <div class="card-servico">
 
-        <img src="img/TOSA.jpg" alt="Tosa">
+        <img src="img/tosa.jpg" alt="Tosa">
 
-        <h3>Tosa</h3>
+        <h3>
+          Tosa Completa
+        </h3>
 
         <p>
-          Tosa higiênica e personalizada com muito cuidado.
+
+          Tosa personalizada com muito cuidado e carinho.
+
         </p>
 
-        <button>Saiba Mais</button>
+        <button>
+          Saiba Mais
+        </button>
 
       </div>
 
-
       <!-- CARD 3 -->
+
       <div class="card-servico">
 
-        <img src="img/vet-dog.jpg" alt="Veterinário">
+        <img src="img/veterinario.jpg" alt="Veterinário">
 
-        <h3>Veterinário</h3>
+        <h3>
+          Veterinário
+        </h3>
 
         <p>
-          Atendimento veterinário especializado para todas as idades.
+
+          Atendimento especializado para cães e gatos de todas as idades.
+
         </p>
 
-        <button>Saiba Mais</button>
+        <button>
+          Saiba Mais
+        </button>
 
       </div>
 
     </div>
 
   </section>
+
+  
   <!-- CARROSSEL -->
 
   <section class="carrossel-petshop">
 
-    <!-- CARROSSEL BOOTSTRAP -->
-
-    <div id="carouselPetshop" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-
-      <!-- 
-      carousel slide = ativa o carrossel
-      carousel-fade = efeito suave entre imagens
-      data-bs-ride = inicia automaticamente
-      data-bs-interval = troca imagem a cada 3 segundos
-      data-bs-pause = pausa quando mouse passa em cima
-    -->
-
-      <!-- INDICADORES -->
-
-      <div class="carousel-indicators">
-
-        <!-- BOTÃO SLIDE 1 -->
-
-        <button type="button" data-bs-target="#carouselPetshop" data-bs-slide-to="0" class="active">
-        </button>
-
-        <!-- BOTÃO SLIDE 2 -->
-
-        <button type="button" data-bs-target="#carouselPetshop" data-bs-slide-to="1">
-        </button>
-
-        <!-- BOTÃO SLIDE 3 -->
-
-        <button type="button" data-bs-target="#carouselPetshop" data-bs-slide-to="2">
-        </button>
-
-      </div>
-
-      <!-- ÁREA DAS IMAGENS -->
+    <div id="carouselPetshop"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000">
 
       <div class="carousel-inner">
 
@@ -293,15 +298,9 @@
 
         <div class="carousel-item active">
 
-          <!-- IMAGEM -->
-
-          <img src="./img/carrossel1.jpg" class="imagem-carrossel" alt="Pet Feliz">
-          <!-- 
-          d-block = display block
-          w-100 = largura total
-        -->
-
-          <!-- TEXTO SOBRE IMAGEM -->
+          <img src="./img/carrossel1.jpg"
+            class="imagem-carrossel"
+            alt="Pet Feliz">
 
           <div class="carousel-caption">
 
@@ -321,11 +320,9 @@
 
         <div class="carousel-item">
 
-          <!-- IMAGEM -->
-
-          <img src="./img/carrossel2.jpg" class="imagem-carrossel" alt="Banho e Tosa">
-
-          <!-- TEXTO SOBRE IMAGEM -->
+          <img src="./img/carrossel2.jpg"
+            class="imagem-carrossel"
+            alt="Banho e Tosa">
 
           <div class="carousel-caption">
 
@@ -334,7 +331,7 @@
             </h2>
 
             <p>
-              Seu melhor amigo limpo, cheiroso e feliz.
+              Seu melhor amigo limpo e feliz.
             </p>
 
           </div>
@@ -345,10 +342,9 @@
 
         <div class="carousel-item">
 
-          <!-- IMAGEM -->
-
-          <img src="./img/carrossel3.jpg" class="imagem-carrossel" alt="Produtos ">
-          <!-- TEXTO SOBRE IMAGEM -->
+          <img src="./img/carrossel3.jpg"
+            class="imagem-carrossel"
+            alt="Produtos">
 
           <div class="carousel-caption">
 
@@ -366,30 +362,9 @@
 
       </div>
 
-      <!-- SETA ESQUERDA -->
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPetshop" data-bs-slide="prev">
-
-        <!-- ÍCONE -->
-
-        <span class="carousel-control-prev-icon"></span>
-
-      </button>
-
-      <!-- SETA DIREITA -->
-
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselPetshop" data-bs-slide="next">
-
-        <!-- ÍCONE -->
-
-        <span class="carousel-control-next-icon"></span>
-
-      </button>
-
     </div>
 
   </section>
-
 
   <!-- FOOTER -->
 
@@ -397,20 +372,16 @@
 
     <div class="container">
 
-      <!-- NOME -->
-
       <h3>
         Bosque dos Bichos 🐾
       </h3>
 
-      <!-- TEXTO -->
-
       <p>
+
         Cuidando do seu melhor amigo com carinho,
         conforto e segurança.
-      </p>
 
-      <!-- CONTATO -->
+      </p>
 
       <div class="footer-contato">
 
@@ -424,8 +395,6 @@
 
       </div>
 
-      <!-- COPYRIGHT -->
-
       <small>
         © 2026 Todos os direitos reservados
       </small>
@@ -434,152 +403,152 @@
 
   </footer>
 
-
-
   <!-- MODAL -->
 
-  <div class="modal fade" id="modalPet" tabindex="-1">
-
-    <!-- ÁREA CENTRAL -->
+  <div class="modal fade"
+    id="modalPet"
+    tabindex="-1">
 
     <div class="modal-dialog modal-dialog-centered">
 
-      <!-- CONTEÚDO -->
-
       <div class="modal-content">
 
-        <!-- CABEÇALHO -->
+        <!-- HEADER -->
 
         <div class="modal-header">
 
           <h2 class="modal-title">
+
             Agendar Banho 🐶
+
           </h2>
 
-          <!-- BOTÃO FECHAR -->
-
-          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          <button type="button"
+            class="btn-close"
+            data-bs-dismiss="modal">
           </button>
 
         </div>
 
-        <!-- CORPO -->
+        <!-- BODY -->
 
         <div class="modal-body">
 
+          <!-- NOME -->
 
+          <input type="text"
+            class="form-control mb-3"
+            placeholder="Nome do pet">
 
+          <!-- RAÇA -->
 
+          <input type="text"
+            class="form-control mb-3"
+            placeholder="Raça do pet">
 
-          <!-- RODAPÉ -->
+          <!-- TELEFONE -->
 
-          <div class="modal-footer">
+          <input type="tel"
+            class="form-control mb-3"
+            placeholder="Telefone do responsável">
 
-            <!-- BOTÃO -->
+          <!-- PORTE -->
 
-            <button class="btn-modal" onclick="agendarPet()">
+          <select class="form-select mb-3">
 
-              Confirmar Agendamento
+            <option>
+              Porte do pet
+            </option>
 
-            </button>
+            <option>
+              Pequeno
+            </option>
 
-            <!-- NOME DO PET -->
+            <option>
+              Médio
+            </option>
 
-            <input type="text" class="form-control mb-3" placeholder="Nome do pet">
+            <option>
+              Grande
+            </option>
 
-            <!-- RAÇA -->
+          </select>
 
-            <input type="text" class="form-control mb-3" placeholder="Raça do pet">
+          <!-- SERVIÇO -->
 
-            <!-- TELEFONE -->
+          <select class="form-select mb-3">
 
-            <input type="tel" class="form-control mb-3" placeholder="Telefone do responsável">
+            <option>
+              Escolha um serviço
+            </option>
 
-            <!-- PORTE -->
+            <option>
+              Banho
+            </option>
 
-            <select class="form-select mb-3">
+            <option>
+              Banho e Tosa
+            </option>
 
-              <option>
-                Porte do pet
-              </option>
+            <option>
+              Consulta Veterinária
+            </option>
 
-              <option>
-                Pequeno
-              </option>
+          </select>
 
-              <option>
-                Médio
-              </option>
+          <!-- DATA -->
 
-              <option>
-                Grande
-              </option>
+          <input type="date"
+            class="form-control mb-3">
 
-            </select>
+          <!-- HORÁRIO -->
 
-            <!-- SERVIÇO -->
+          <select class="form-select mb-3">
 
-            <select class="form-select mb-3">
+            <option>
+              Escolha um horário
+            </option>
 
-              <option>
-                Escolha um serviço
-              </option>
+            <option>
+              09:00
+            </option>
 
-              <option>
-                Banho
-              </option>
+            <option>
+              10:30
+            </option>
 
-              <option>
-                Banho e Tosa
-              </option>
+            <option>
+              13:00
+            </option>
 
-              <option>
-                Consulta Veterinária
-              </option>
+            <option>
+              15:30
+            </option>
 
-            </select>
+            <option>
+              17:00
+            </option>
 
-            <!-- DATA -->
+          </select>
 
-            <input type="date" class="form-control mb-3">
+          <!-- OBS -->
 
-            <!-- HORÁRIO -->
+          <textarea class="form-control"
+            rows="4"
+            placeholder="Observações sobre o pet"></textarea>
 
-            <select class="form-select mb-3">
+        </div>
 
-              <option>
-                Escolha um horário
-              </option>
+        <!-- FOOTER -->
 
-              <option>
-                09:00
-              </option>
+        <div class="modal-footer">
 
-              <option>
-                10:30
-              </option>
+          <button class="btn-modal"
+            onclick="agendarPet()">
 
-              <option>
-                13:00
-              </option>
+            Confirmar Agendamento
 
-              <option>
-                15:30
-              </option>
-
-              <option>
-                17:00
-              </option>
-
-            </select>
-
-            <!-- OBSERVAÇÕES -->
-
-            <textarea class="form-control" rows="4" placeholder="Observações sobre o pet">
-</textarea>
-
-
-          </div>
+          </button>
 
         </div>
 
@@ -587,35 +556,22 @@
 
     </div>
 
+  </div>
 
+  <!-- SCRIPT -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
 
+    function agendarPet(){
 
+      alert("Agendamento realizado com sucesso 🐶")
 
+    }
 
-
-
-
-
-
-
-    <!-- SCRIPT DO BOOTSTRAP -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- ativa funcionalidades do Bootstrap -->
-    <!-- exemplo: modal, menu mobile, carrossel -->
-
-    <script>
-
-      function agendarPet() {
-
-        alert("Agendamento realizado com sucesso 🐶");
-
-      }
-
-    </script>
+  </script>
 
 </body>
 
-</html>''''
+</html>

@@ -8,6 +8,18 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
 
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <!-- BOOTSTRAP -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -19,20 +31,16 @@
     href="style.css">
 
   <title>
-    Pets | Bosque dos Bichos
+    Serviços | Bosque dos Bichos
   </title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+  <!-- ========================================= -->
   <!-- HEADER -->
+  <!-- ========================================= -->
 
   <header class="header-petshop">
 
@@ -54,38 +62,67 @@
 
         </a>
 
+        <!-- BOTÃO MOBILE -->
+
+        <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPetshop">
+
+          <span class="navbar-toggler-icon">
+          </span>
+
+        </button>
+
         <!-- MENU -->
 
-        <div class="collapse navbar-collapse justify-content-end">
+        <div class="collapse navbar-collapse justify-content-end"
+          id="menuPetshop">
 
           <ul class="navbar-nav align-items-center">
 
             <li class="nav-item">
+
               <a class="nav-link"
                 href="index.html">
+
                 Início
+
               </a>
+
             </li>
 
             <li class="nav-item">
+
               <a class="nav-link"
                 href="pets.html">
+
                 Pets
+
               </a>
+
             </li>
 
             <li class="nav-item">
+
               <a class="nav-link"
                 href="produtos.html">
+
                 Produtos
+
               </a>
+
             </li>
 
             <li class="nav-item">
-              <a class="nav-link"
+
+              <a class="nav-link active"
                 href="servicos.html">
+
                 Serviços
+
               </a>
+
             </li>
 
           </ul>
@@ -98,407 +135,429 @@
 
   </header>
 
-</a>
-    <!-- BANNER -->
 
-<!-- ========================================= -->
-<!-- BANNER -->
-<!-- ========================================= -->
+  <!-- ========================================= -->
+  <!-- BANNER -->
+  <!-- ========================================= -->
 
-<<!-- ========================================= -->
-<!-- ÁREA SERVIÇOS -->
-<!-- ========================================= -->
+  <section class="banner-servicos">
 
-<section class="pagina-servicos">
+    <div class="container">
 
-  <div class="container">
+      <!-- TITULO -->
 
-    <!-- LINHA -->
+      <h1>
+        Serviços Premium para seu Pet 🐾
+      </h1>
 
-    <div class="row g-4">
+      <!-- TEXTO -->
 
-      <!-- ========================================= -->
-      <!-- SERVIÇO 1 -->
-      <!-- ========================================= -->
+      <p>
+        Cuidado, conforto e muito carinho
+        para deixar seu melhor amigo feliz.
+      </p>
 
-      <div class="col-lg-4 col-md-6">
+    </div>
 
-        <!-- CARD -->
+  </section>
 
-        <div class="card-pagina-servico">
 
-          <!-- ÍCONE -->
+  <!-- ========================================= -->
+  <!-- ÁREA SERVIÇOS -->
+  <!-- ========================================= -->
 
-          <div class="icone-pagina">
+  <section class="pagina-servicos">
 
-            🛁
+    <div class="container">
+
+      <!-- LINHA -->
+
+      <div class="row g-4">
+
+        <!-- ========================================= -->
+        <!-- SERVIÇO 1 -->
+        <!-- ========================================= -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <!-- CARD -->
+
+          <div class="card-pagina-servico">
+
+            <!-- ÍCONE -->
+
+            <div class="icone-pagina">
+
+              🛁
+
+            </div>
+
+            <!-- TITULO -->
+
+            <h3>
+              Banho Premium
+            </h3>
+
+            <!-- TEXTO -->
+
+            <p>
+              Banho completo com produtos hidratantes
+              e perfume suave.
+            </p>
+
+            <!-- LISTA -->
+
+            <ul class="lista-servicos">
+
+              <li>
+                ✔ Shampoo Especial
+              </li>
+
+              <li>
+                ✔ Secagem Completa
+              </li>
+
+              <li>
+                ✔ Perfume Pet
+              </li>
+
+            </ul>
+
+            <!-- TEMPO -->
+
+            <small>
+
+              ⏰ Duração média: 1h
+
+            </small>
+
+            <!-- PREÇO -->
+
+            <span>
+
+              A partir de R$ 50
+
+            </span>
+
+            <!-- BOTÃO -->
+
+            <button class="btn-servico">
+
+              Agendar Agora
+
+            </button>
 
           </div>
-
-          <!-- TITULO -->
-
-          <h3>
-            Banho Premium
-          </h3>
-
-          <!-- TEXTO -->
-
-          <p>
-            Banho completo com produtos hidratantes
-            e perfume suave.
-          </p>
-
-          <!-- BENEFÍCIOS -->
-
-          <ul class="lista-servicos">
-
-            <li>
-              ✔ Shampoo Especial
-            </li>
-
-            <li>
-              ✔ Secagem Completa
-            </li>
-
-            <li>
-              ✔ Perfume Pet
-            </li>
-
-          </ul>
-
-          <!-- DURAÇÃO -->
-
-          <small>
-
-            ⏰ Duração média: 1h
-
-          </small>
-
-          <!-- PREÇO -->
-
-          <span>
-
-            A partir de R$ 50
-
-          </span>
-
-          <!-- BOTÃO -->
-
-          <button class="btn-servico">
-
-            Agendar Agora
-
-          </button>
 
         </div>
 
-      </div>
 
+        <!-- ========================================= -->
+        <!-- SERVIÇO 2 -->
+        <!-- ========================================= -->
 
-      <!-- ========================================= -->
-      <!-- SERVIÇO 2 -->
-      <!-- ========================================= -->
+        <div class="col-lg-4 col-md-6">
 
-      <div class="col-lg-4 col-md-6">
+          <div class="card-pagina-servico">
 
-        <div class="card-pagina-servico">
+            <div class="icone-pagina">
 
-          <div class="icone-pagina">
+              ✂️
 
-            ✂️
+            </div>
+
+            <h3>
+              Tosa Higiênica
+            </h3>
+
+            <p>
+              Tosa feita com muito cuidado
+              e conforto para seu pet.
+            </p>
+
+            <ul class="lista-servicos">
+
+              <li>
+                ✔ Corte Profissional
+              </li>
+
+              <li>
+                ✔ Higiene Completa
+              </li>
+
+              <li>
+                ✔ Finalização Especial
+              </li>
+
+            </ul>
+
+            <small>
+
+              ⏰ Duração média: 1h30
+
+            </small>
+
+            <span>
+
+              A partir de R$ 70
+
+            </span>
+
+            <button class="btn-servico">
+
+              Agendar Agora
+
+            </button>
 
           </div>
-
-          <h3>
-            Tosa Higiênica
-          </h3>
-
-          <p>
-            Tosa feita com muito cuidado
-            e conforto para seu pet.
-          </p>
-
-          <ul class="lista-servicos">
-
-            <li>
-              ✔ Corte Profissional
-            </li>
-
-            <li>
-              ✔ Higiene Completa
-            </li>
-
-            <li>
-              ✔ Finalização Especial
-            </li>
-
-          </ul>
-
-          <small>
-
-            ⏰ Duração média: 1h30
-
-          </small>
-
-          <span>
-
-            A partir de R$ 70
-
-          </span>
-
-          <button class="btn-servico">
-
-            Agendar Agora
-
-          </button>
 
         </div>
 
-      </div>
 
+        <!-- ========================================= -->
+        <!-- SERVIÇO 3 -->
+        <!-- ========================================= -->
 
-      <!-- ========================================= -->
-      <!-- SERVIÇO 3 -->
-      <!-- ========================================= -->
+        <div class="col-lg-4 col-md-6">
 
-      <div class="col-lg-4 col-md-6">
+          <div class="card-pagina-servico">
 
-        <div class="card-pagina-servico">
+            <div class="icone-pagina">
 
-          <div class="icone-pagina">
+              🩺
 
-            🩺
+            </div>
+
+            <h3>
+              Consulta Veterinária
+            </h3>
+
+            <p>
+              Atendimento especializado
+              para todas as idades.
+            </p>
+
+            <ul class="lista-servicos">
+
+              <li>
+                ✔ Check-up Completo
+              </li>
+
+              <li>
+                ✔ Orientação Médica
+              </li>
+
+              <li>
+                ✔ Atendimento Humanizado
+              </li>
+
+            </ul>
+
+            <small>
+
+              ⏰ Duração média: 45min
+
+            </small>
+
+            <span>
+
+              A partir de R$ 120
+
+            </span>
+
+            <button class="btn-servico">
+
+              Agendar Agora
+
+            </button>
 
           </div>
-
-          <h3>
-            Consulta Veterinária
-          </h3>
-
-          <p>
-            Atendimento especializado
-            para todas as idades.
-          </p>
-
-          <ul class="lista-servicos">
-
-            <li>
-              ✔ Check-up Completo
-            </li>
-
-            <li>
-              ✔ Orientação Médica
-            </li>
-
-            <li>
-              ✔ Atendimento Humanizado
-            </li>
-
-          </ul>
-
-          <small>
-
-            ⏰ Duração média: 45min
-
-          </small>
-
-          <span>
-
-            A partir de R$ 120
-
-          </span>
-
-          <button class="btn-servico">
-
-            Agendar Agora
-
-          </button>
 
         </div>
 
-      </div>
 
+        <!-- ========================================= -->
+        <!-- SERVIÇO 4 -->
+        <!-- ========================================= -->
 
-      <!-- ========================================= -->
-      <!-- SERVIÇO 4 -->
-      <!-- ========================================= -->
+        <div class="col-lg-4 col-md-6">
 
-      <div class="col-lg-4 col-md-6">
+          <div class="card-pagina-servico">
 
-        <div class="card-pagina-servico">
+            <div class="icone-pagina">
 
-          <div class="icone-pagina">
+              🦷
 
-            🦷
+            </div>
+
+            <h3>
+              Limpeza Dental
+            </h3>
+
+            <p>
+              Higiene bucal para manter
+              dentes saudáveis.
+            </p>
+
+            <ul class="lista-servicos">
+
+              <li>
+                ✔ Limpeza Completa
+              </li>
+
+              <li>
+                ✔ Hálito Fresco
+              </li>
+
+              <li>
+                ✔ Mais Saúde
+              </li>
+
+            </ul>
+
+            <small>
+
+              ⏰ Duração média: 40min
+
+            </small>
+
+            <span>
+
+              A partir de R$ 90
+
+            </span>
+
+            <button class="btn-servico">
+
+              Agendar Agora
+
+            </button>
 
           </div>
-
-          <h3>
-            Limpeza Dental
-          </h3>
-
-          <p>
-            Higiene bucal para manter
-            dentes saudáveis.
-          </p>
-
-          <ul class="lista-servicos">
-
-            <li>
-              ✔ Limpeza Completa
-            </li>
-
-            <li>
-              ✔ Hálito Fresco
-            </li>
-
-            <li>
-              ✔ Mais Saúde
-            </li>
-
-          </ul>
-
-          <small>
-
-            ⏰ Duração média: 40min
-
-          </small>
-
-          <span>
-
-            A partir de R$ 90
-
-          </span>
-
-          <button class="btn-servico">
-
-            Agendar Agora
-
-          </button>
 
         </div>
 
-      </div>
 
+        <!-- ========================================= -->
+        <!-- SERVIÇO 5 -->
+        <!-- ========================================= -->
 
-      <!-- ========================================= -->
-      <!-- SERVIÇO 5 -->
-      <!-- ========================================= -->
+        <div class="col-lg-4 col-md-6">
 
-      <div class="col-lg-4 col-md-6">
+          <div class="card-pagina-servico">
 
-        <div class="card-pagina-servico">
+            <div class="icone-pagina">
 
-          <div class="icone-pagina">
+              🐕‍🦺
 
-            🐕‍🦺
+            </div>
+
+            <h3>
+              Passeio Pet
+            </h3>
+
+            <p>
+              Passeios seguros e divertidos
+              para gastar energia.
+            </p>
+
+            <ul class="lista-servicos">
+
+              <li>
+                ✔ Monitoramento
+              </li>
+
+              <li>
+                ✔ Segurança Total
+              </li>
+
+              <li>
+                ✔ Muito Carinho
+              </li>
+
+            </ul>
+
+            <small>
+
+              ⏰ Duração média: 30min
+
+            </small>
+
+            <span>
+
+              A partir de R$ 35
+
+            </span>
+
+            <button class="btn-servico">
+
+              Agendar Agora
+
+            </button>
 
           </div>
-
-          <h3>
-            Passeio Pet
-          </h3>
-
-          <p>
-            Passeios seguros e divertidos
-            para gastar energia.
-          </p>
-
-          <ul class="lista-servicos">
-
-            <li>
-              ✔ Monitoramento
-            </li>
-
-            <li>
-              ✔ Segurança Total
-            </li>
-
-            <li>
-              ✔ Muito Carinho
-            </li>
-
-          </ul>
-
-          <small>
-
-            ⏰ Duração média: 30min
-
-          </small>
-
-          <span>
-
-            A partir de R$ 35
-
-          </span>
-
-          <button class="btn-servico">
-
-            Agendar Agora
-
-          </button>
 
         </div>
 
-      </div>
 
+        <!-- ========================================= -->
+        <!-- SERVIÇO 6 -->
+        <!-- ========================================= -->
 
-      <!-- ========================================= -->
-      <!-- SERVIÇO 6 -->
-      <!-- ========================================= -->
+        <div class="col-lg-4 col-md-6">
 
-      <div class="col-lg-4 col-md-6">
+          <div class="card-pagina-servico">
 
-        <div class="card-pagina-servico">
+            <div class="icone-pagina">
 
-          <div class="icone-pagina">
+              🏨
 
-            🏨
+            </div>
+
+            <h3>
+              Hotel Pet
+            </h3>
+
+            <p>
+              Hospedagem confortável
+              e segura para seu pet.
+            </p>
+
+            <ul class="lista-servicos">
+
+              <li>
+                ✔ Ambiente Climatizado
+              </li>
+
+              <li>
+                ✔ Alimentação Inclusa
+              </li>
+
+              <li>
+                ✔ Monitoramento 24h
+              </li>
+
+            </ul>
+
+            <small>
+
+              ⏰ Diária Completa
+
+            </small>
+
+            <span>
+
+              A partir de R$ 150
+
+            </span>
+
+            <button class="btn-servico">
+
+              Agendar Agora
+
+            </button>
 
           </div>
-
-          <h3>
-            Hotel Pet
-          </h3>
-
-          <p>
-            Hospedagem confortável
-            e segura para seu pet.
-          </p>
-
-          <ul class="lista-servicos">
-
-            <li>
-              ✔ Ambiente Climatizado
-            </li>
-
-            <li>
-              ✔ Alimentação Inclusa
-            </li>
-
-            <li>
-              ✔ Monitoramento 24h
-            </li>
-
-          </ul>
-
-          <small>
-
-            ⏰ Diária Completa
-
-          </small>
-
-          <span>
-
-            A partir de R$ 150
-
-          </span>
-
-          <button class="btn-servico">
-
-            Agendar Agora
-
-          </button>
 
         </div>
 
@@ -506,28 +565,104 @@
 
     </div>
 
-  </div>
+  </section>
 
-</section>
 
-<footer class="footer-petshop">
+  <!-- ========================================= -->
+  <!-- SEÇÃO EXTRA -->
+  <!-- ========================================= -->
+
+  <section class="secao-diferenciais">
 
     <div class="container">
 
-      <!-- NOME -->
+      <!-- TITULO -->
+
+      <h2>
+        Por que escolher nosso petshop? 🐶
+      </h2>
+
+      <!-- CARDS -->
+
+      <div class="diferenciais-grid">
+
+        <!-- ITEM -->
+
+        <div class="diferencial-box">
+
+          <span>
+            ❤️
+          </span>
+
+          <h3>
+            Atendimento Humanizado
+          </h3>
+
+          <p>
+            Tratamos cada pet com carinho e respeito.
+          </p>
+
+        </div>
+
+        <!-- ITEM -->
+
+        <div class="diferencial-box">
+
+          <span>
+            ⭐
+          </span>
+
+          <h3>
+            Equipe Especializada
+          </h3>
+
+          <p>
+            Profissionais treinados para cuidar do seu pet.
+          </p>
+
+        </div>
+
+        <!-- ITEM -->
+
+        <div class="diferencial-box">
+
+          <span>
+            🐾
+          </span>
+
+          <h3>
+            Ambiente Seguro
+          </h3>
+
+          <p>
+            Espaço limpo, confortável e seguro.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================= -->
+
+  <footer class="footer-petshop">
+
+    <div class="container">
 
       <h3>
         Bosque dos Bichos 🐾
       </h3>
 
-      <!-- TEXTO -->
-
       <p>
         Cuidando do seu melhor amigo com carinho,
         conforto e segurança.
       </p>
-
-      <!-- CONTATO -->
 
       <div class="footer-contato">
 
@@ -541,8 +676,6 @@
 
       </div>
 
-      <!-- COPYRIGHT -->
-
       <small>
         © 2026 Todos os direitos reservados
       </small>
@@ -552,11 +685,10 @@
   </footer>
 
 
+  <!-- SCRIPT BOOTSTRAP -->
 
-
-<!-- SCRIPT BOOTSTRAP -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
