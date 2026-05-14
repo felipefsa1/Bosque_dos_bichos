@@ -283,10 +283,10 @@ h1, h2, h3{
 
 .hero-imagem img{
 
-  width: 700px;
-
+  width: 660px;
+  height: 600px;
   /* bordas arredondadas */
-  border-radius: 10px;
+  border-radius: 30px;
 
   /* sombra */
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -676,8 +676,119 @@ h1, h2, h3{
 
 
 /* ========================================= */
-/* LISTA SERVIÇOS */
+/* PAGINA SERVIÇOS MODERNA */
 /* ========================================= */
+.banner-servicos h1{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center ;
+}
+.banner-servicos h3{
+ margin-top: 40px;
+  color: #2F5D50;
+  display: flex;
+  justify-content: center ;
+}
+.pagina-servicos{
+
+  padding: 80px 0;
+
+}
+
+
+/* CARD */
+
+.card-servico-moderno{
+
+  background-color: white;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  transition: 0.4s;
+
+  height: 100%;
+
+}
+
+
+/* HOVER */
+
+.card-servico-moderno:hover{
+
+  transform: translateY(-10px);
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+/* IMAGEM */
+
+.card-servico-moderno img{
+
+ 
+  width: 100%;
+
+  height: 330px;
+
+ object-fit: cover;
+
+}
+
+
+/* CONTEUDO */
+
+.conteudo-servico{
+
+  padding: 25px;
+
+  text-align: center;
+
+}
+
+
+/* ICONE */
+
+.icone-servico{
+
+  font-size: 2.5rem;
+
+  margin-bottom: 15px;
+
+}
+
+
+/* TITULO */
+
+.card-servico-moderno h3{
+
+  color: #2F5D50;
+
+  font-size: 1.8rem;
+
+  margin-bottom: 15px;
+
+  font-weight: bold;
+
+}
+
+
+/* TEXTO */
+
+.card-servico-moderno p{
+
+  color: #666;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* LISTA */
 
 .lista-servicos{
 
@@ -685,31 +796,39 @@ h1, h2, h3{
 
   padding: 0;
 
-  margin: 25px 0;
+  margin-bottom: 20px;
 
 }
 
 
-/* ITEM LISTA */
+/* ITEM */
 
 .lista-servicos li{
 
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 
-  color: #666;
+  color: #555;
 
 }
 
 
-/* TEMPO */
+/* PREÇO */
 
-.card-pagina-servico small{
+.preco-servico{
 
-  display: block;
+  display: inline-block;
+
+  background-color: #FFE7D6;
+
+  color: #FF914D;
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  font-weight: bold;
 
   margin-bottom: 20px;
-
-  color: #777;
 
 }
 
@@ -730,14 +849,12 @@ h1, h2, h3{
 
   font-weight: bold;
 
-  margin-top: 20px;
-
   transition: 0.3s;
 
 }
 
 
-/* HOVER */
+/* HOVER BOTÃO */
 
 .btn-servico:hover{
 
@@ -746,25 +863,6 @@ h1, h2, h3{
   transform: scale(1.05);
 
 }
-
-
-/* HOVER CARD */
-
-.card-pagina-servico:hover{
-
-  transform: translateY(-12px);
-
-}
-
-
-/* ÍCONE */
-
-.icone-pagina{
-
-  font-size: 4rem;
-
-}
-
 
 /* ========================================= */
 /* PAGINA PRODUTOS */
@@ -824,7 +922,7 @@ h1, h2, h3{
 
 .card-produto{
 
-  background-color: white;
+  background-color:#F8F5EF;
 
   border-radius: 25px;
 
@@ -945,39 +1043,142 @@ h1, h2, h3{
 
 /* CARD PET */
 
-.card-pet{
+/* ========================================= */
+/* BANNER PETS MODERNO */
+/* ========================================= */
 
-  /* fundo branco */
-  background-color: white;
+.banner-pets{
 
-  /* bordas arredondadas */
-  border-radius: 30px;
+  /* fundo claro */
+  background: linear-gradient(135deg, #F8F5EF, #F5F1E8);
 
   /* espaço interno */
-  padding: 20px;
+  padding: 90px 20px;
 
   /* centraliza */
   text-align: center;
 
-  /* sombra */
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-
-  /* animação suave */
-  transition: 0.4s;
-
-  /* ocupa altura toda */
-  height: 100%;
+  /* posição relativa */
+  position: relative;
 
   /* esconde excesso */
   overflow: hidden;
 
-  /* necessário pro efeito */
-  position: relative;
+}
+
+
+/* TITULO */
+
+.banner-pets h1{
+
+  font-size: 4rem;
+
+  font-weight: bold;
+
+  color: #2F5D50;
+
+  margin-bottom: 20px;
 
 }
 
 
-/* LINHA LARANJA EM CIMA */
+/* TEXO */
+
+.banner-pets p{
+
+  font-size: 1.3rem;
+
+  color: #666;
+
+}
+
+
+/* PATINHAS DECORATIVAS */
+
+.banner-pets::before{
+
+  content: "🐾";
+
+  position: absolute;
+
+  top: 30px;
+
+  left: 60px;
+
+  font-size: 4rem;
+
+  opacity: 0.15;
+
+}
+
+.banner-pets::after{
+
+  content: "🐾";
+
+  position: absolute;
+
+  bottom: 30px;
+
+  right: 60px;
+
+  font-size: 4rem;
+
+  opacity: 0.15;
+
+}
+
+
+/* ========================================= */
+/* AREA DOS PETS */
+/* ========================================= */
+.hero-pets-texto h1{
+
+   display: flex;
+   justify-content: center;
+}
+.hero-pets-texto h3{
+ color: #2F5D50;
+  display: flex;
+  justify-content: center;
+}
+.pagina-pets{
+
+  padding: 70px 0;
+
+}
+
+.hero-pets-imagem{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* CARD PET */
+
+.card-pet{
+
+  background-color: white;
+
+  border-radius: 30px;
+
+  padding: 18px;
+
+  text-align: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  height: 100%;
+
+  transition: 0.4s;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+
+/* LINHA SUPERIOR */
 
 .card-pet::before{
 
@@ -991,25 +1192,25 @@ h1, h2, h3{
 
   width: 100%;
 
-  height: 6px;
+  height: 7px;
 
   background: linear-gradient(90deg, #FF914D, #FFD166);
 
 }
 
 
-/* HOVER CARD */
+/* HOVER */
 
 .card-pet:hover{
 
-  transform: translateY(-10px);
+  transform: translateY(-12px);
 
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.15);
 
 }
 
 
-/* FOTO PET */
+/* FOTO */
 
 .card-pet img{
 
@@ -1019,7 +1220,7 @@ h1, h2, h3{
 
   object-fit: cover;
 
-  border-radius: 20px;
+  border-radius: 22px;
 
   margin-bottom: 20px;
 
@@ -1041,11 +1242,13 @@ h1, h2, h3{
 
 .card-pet h3{
 
+  font-size: 2.2rem;
+
   color: #2F5D50;
 
-  font-size: 2rem;
-
   margin-bottom: 10px;
+
+  font-weight: bold;
 
 }
 
@@ -1055,6 +1258,8 @@ h1, h2, h3{
 .card-pet p{
 
   color: #666;
+
+  font-size: 1rem;
 
 }
 
@@ -1084,11 +1289,11 @@ h1, h2, h3{
 
   color: #FF914D;
 
-  padding: 8px 14px;
+  padding: 8px 16px;
 
   border-radius: 30px;
 
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 
   font-weight: bold;
 
@@ -1101,7 +1306,68 @@ h1, h2, h3{
 
   margin-bottom: 25px;
 
-  line-height: 1.6;
+  line-height: 1.7;
+
+}
+
+
+/* BOTÃO */
+
+.btn-adotar{
+
+  background-color: #2F5D50;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 35px;
+
+  border-radius: 40px;
+
+  font-weight: bold;
+
+  font-size: 1rem;
+
+  transition: 0.3s;
+
+}
+
+
+/* HOVER BOTÃO */
+
+.btn-adotar:hover{
+
+  background-color: #23463C;
+
+  transform: scale(1.05);
+
+}
+
+
+/* ========================================= */
+/* RESPONSIVO */
+/* ========================================= */
+
+@media(max-width:768px){
+
+  .banner-pets h1{
+
+    font-size: 2.7rem;
+
+  }
+
+  .banner-pets p{
+
+    font-size: 1rem;
+
+  }
+
+  .card-pet img{
+
+    height: 240px;
+
+  }
 
 }
 
@@ -1367,6 +1633,9 @@ h1, h2, h3{
   .hero-petshop{
 
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
     padding: 70px 20px;
 
